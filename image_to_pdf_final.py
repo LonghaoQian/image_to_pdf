@@ -51,8 +51,8 @@ def main():
         print("⚠️ No images converted. PDF not created.")
         return
 
-    # Save PDF in original folder
-    pdf_path = in_dir / "merged_output.pdf"
+    # Save PDF in original folder, named after the input folder
+    pdf_path = in_dir / f"{in_dir.name}.pdf"
 
     print(f"\n📄 Creating PDF: {pdf_path}\n")
 
